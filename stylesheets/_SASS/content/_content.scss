@@ -4,59 +4,79 @@
 body {
   background-color: #aaaaff;
   color: #FFF;
+
 }
+
+// vars
+$splashHeight: 830px;
+$navBarHeight: 80px;
+$footerHeight: 150px;
+
+$contEventsHeight: 450px;
+$contReserveHeight: 420px;
+$contFoodHeight: 450px;
+$contAboutHeight: 730px;
+$contMapHeight: 600px;
+
+$contMargin: 6px;
+$contWidth: 99%;
 
 #splash {
   background-color: red;
   width: 100%;
-  height: 100px;
+  height: $splashHeight;
   // display: inline-block;
-  margin: 5px;
 
 }
 
 #navBar {
   background-color: green;
   width: 100%;
-  height: 100px;
+  height: $navBarHeight;
   // display: inline-block;
-  margin: 5px;
 
 }
 
 #footer {
   background-color: blue;
   width: 100%;
-  height: 100px;
+  height: $footerHeight;
   // display: inline-block;
-  margin: 5px;
 
 }
+
 
 .contBlock {
-  width: 100%;
-  height: 100px;
+  width: $contWidth;
   // display: inline-block;
-  margin: 5px;
+  margin: $contMargin auto;
+  text-align: center;
 
 }
+
+
 
 #contEvents {
   background-color: red;
+  height: $contEventsHeight;
 }
 
 #contReserve {
   background-color: green;
+  height: $contReserveHeight;
 }
 
 #contFood {
   background-color: blue;
+  height: $contFoodHeight;
 }
 
 #contAbout {
   background-color: red;
+  height: $contAboutHeight;
 }
 
 #contMap {
   background-color: green;
+  height: $contMapHeight;
 }
