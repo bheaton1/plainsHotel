@@ -7,25 +7,11 @@ body {
 
 }
 
-// vars
-$splashHeight: 830px;
-$navBarHeight: 80px;
-$footerHeight: 150px;
-
-$contEventsHeight: 450px;
-$contReserveHeight: 420px;
-$contFoodHeight: 450px;
-$contAboutHeight: 730px;
-$contMapHeight: 600px;
-
-$contMargin: 6px;
-$contWidth: 99%;
 
 #splash {
   background-color: red;
   width: 100%;
   height: $splashHeight;
-  // display: inline-block;
 
 }
 
@@ -33,7 +19,6 @@ $contWidth: 99%;
   background-color: green;
   width: 100%;
   height: $navBarHeight;
-  // display: inline-block;
 
 }
 
@@ -41,70 +26,64 @@ $contWidth: 99%;
   background-color: blue;
   width: 100%;
   height: $footerHeight;
-  // display: inline-block;
 
 }
 
 
+//  CONTENT DIVS
+
 .contBlock {
   width: $contWidth;
-  // display: inline-block;
   margin: $contMargin auto;
   text-align: center;
 
 }
 
 
-
 #contEvents {
-  // background-color: red;
   height: $contEventsHeight;
 
-// image background
+  // image background
   background: url('../../imgs/photoTableSetting_900x600.jpg') no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 
 }
 
 #contReserve {
-  // background-color: green;
   height: $contReserveHeight;
 
   // image background
-    background: url('../../imgs/photoRoom_490x350.jpg') no-repeat;
-    background-size: 100%;
-    background-position: center;
+  background: url('../../imgs/photoRoom_490x350.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
 
 }
 
 #contFood {
-  // background-color: blue;
+  background-color: blue;
   height: $contFoodHeight;
 
   // image background will be applied to two subdivs
 
-
 }
 
 #contAbout {
-  // background-color: red;
   height: $contAboutHeight;
 
   // image background
-    background: url('../../imgs/photoCeiling_2290x846.png') no-repeat;
-    background-size: cover;
-    background-position: center;  //         fix size to fill
+  background: url('../../imgs/photoCeiling_2290x846.png') no-repeat;
+  background-size: cover;
+  background-position: center;  //         fix size to fill
 
 }
 
 #contMap {
-  // background-color: green;
   height: $contMapHeight;
 
   // image background
-    background: url('../../imgs/map.png') no-repeat;
-    background-size: 100%;
-    background-position: center;
+  background: url('../../imgs/map.png') no-repeat;
+  background-size: cover;
+  background-position: center;
 
 }
