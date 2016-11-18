@@ -2,8 +2,8 @@
 
 
 body {
-  background-color: #aaaaff;
-  color: #FFF;
+  background-color: #aaaaff;  // ---------  temp
+  color: #FFF;  //               ---------  temp
 
 }
 
@@ -57,26 +57,54 @@ $contWidth: 99%;
 
 
 #contEvents {
-  background-color: red;
+  // background-color: red;
   height: $contEventsHeight;
+
+// image background
+  background: url('../../imgs/photoTableSetting_900x600.jpg') no-repeat;
+  background-size: 100%;
+  background-position: center;
+
 }
 
 #contReserve {
-  background-color: green;
+  // background-color: green;
   height: $contReserveHeight;
+
+  // image background
+    background: url('../../imgs/photoRoom_490x350.jpg') no-repeat;
+    background-size: 100%;
+    background-position: center;
+
 }
 
 #contFood {
-  background-color: blue;
+  // background-color: blue;
   height: $contFoodHeight;
+
+  // image background will be applied to two subdivs
+
+
 }
 
 #contAbout {
-  background-color: red;
+  // background-color: red;
   height: $contAboutHeight;
+
+  // image background
+    background: url('../../imgs/photoCeiling_2290x846.png') no-repeat;
+    background-size: cover;
+    background-position: center;  //         fix size to fill
+
 }
 
 #contMap {
-  background-color: green;
+  // background-color: green;
   height: $contMapHeight;
+
+  // image background
+    background: url('../../imgs/map.png') no-repeat;
+    background-size: 100%;
+    background-position: center;
+
 }
