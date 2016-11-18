@@ -2,28 +2,28 @@
 
 
 body {
-  background-color: #aaaaff;  // ---------  temp
-  color: #FFF;  //               ---------  temp
+  background-color: #fff;  // ---------  temp
+  color: #000;  //            ---------  temp
 
 }
 
 
 #splash {
-  background-color: red;
+  background-color: red;  // ---------  temp
   width: 100%;
   height: $splashHeight;
 
 }
 
 #navBar {
-  background-color: green;
+  background-color: $colorGreen;
   width: 100%;
   height: $navBarHeight;
 
 }
 
 #footer {
-  background-color: blue;
+  background-color: $colorGreen;
   width: 100%;
   height: $footerHeight;
 
@@ -35,7 +35,6 @@ body {
 .contBlock {
   width: $contWidth;
   margin: $contMargin auto;
-  text-align: center;
 
 }
 
@@ -61,12 +60,34 @@ body {
 }
 
 #contFood {
-  background-color: blue;
   height: $contFoodHeight;
-
   // image background will be applied to two subdivs
 
+  :nth-child(1) {
+    width: 49.7%;
+    height: 100%;
+    float: left;
+
+    // image background
+    background: url('../../imgs/photoFoodPlates_518x421.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  :nth-child(2) {
+    width: 49.7%;
+    height: 100%;
+    float: right;
+
+    // image background
+    background: url('../../imgs/photoDrinks_996x740.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
 }
+// end contFood
+
 
 #contAbout {
   height: $contAboutHeight;
@@ -74,7 +95,7 @@ body {
   // image background
   background: url('../../imgs/photoCeiling_2290x846.png') no-repeat;
   background-size: cover;
-  background-position: center;  //         fix size to fill
+  background-position: center;
 
 }
 
