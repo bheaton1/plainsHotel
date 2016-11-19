@@ -7,6 +7,16 @@ body {
 
 }
 
+.buttonMain {
+  width:  300px; // -----------------temp
+  height: $buttonHeight;
+  background-color: $colorGreen;
+  border: 3px solid $colorBrown;
+  line-height: $buttonHeight;
+  text-align: center;
+  margin: auto;
+
+}
 
 #splash {
   background-color: red;  // ---------  temp
@@ -35,7 +45,9 @@ body {
 .contBlock {
   width: $contWidth;
   margin: $contMargin auto;
-
+  //  to center buttons
+  display: flex;
+  align-items: center;
 }
 
 
@@ -67,7 +79,8 @@ body {
     width: 49.7%;
     height: 100%;
     float: left;
-
+    position: relative;
+    z-index: 0;
     // image background
     background: url('../../imgs/photoFoodPlates_518x421.png') no-repeat;
     background-size: cover;
@@ -78,7 +91,8 @@ body {
     width: 49.7%;
     height: 100%;
     float: right;
-
+    position: relative;
+    z-index: 0;
     // image background
     background: url('../../imgs/photoDrinks_996x740.png') no-repeat;
     background-size: cover;
