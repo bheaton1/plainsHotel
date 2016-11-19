@@ -31,7 +31,19 @@ body {
   width: 100%;
   height: $splashHeight;
 
+  // image background
+  background: url('../../imgs/logoBuildingMain2x_2028x1164.png') no-repeat;
+  background-size: 70%;
+  background-position: 50% 22%;
+
+
 }
+//
+// #tempDiv {
+//   height: 70px;
+//   width: 100%;
+//   background-color: green;
+// }
 
 #navBar {
   background-color: $colorGreen;
@@ -144,9 +156,8 @@ body {
     height: 260px;
     position: relative;
     top: -20%;
-    // background-color: red; //  -----------  temp
     margin: auto;
-
+    // image background
     background: url('../../imgs/logoDeerHead2x_500x627.png') no-repeat;
     background-size: contain;
     background-position: center;
