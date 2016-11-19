@@ -8,14 +8,22 @@ body {
 }
 
 .buttonMain {
-  width:  300px; // -----------------temp
+  width:  200px; // -----------------temp
   height: $buttonHeight;
   background-color: $colorGreen;
   border: 3px solid $colorBrown;
   line-height: $buttonHeight;
   text-align: center;
   margin: auto;
+  position: relative;
+  // z-index: 1;  //  ----------------  maybe
 
+}
+
+#buttonFD {
+  left: 50%;
+  position: absolute;
+  // z-index: 2;
 }
 
 #splash {
@@ -74,33 +82,43 @@ body {
 #contFood {
   height: $contFoodHeight;
   // image background will be applied to two subdivs
+  
+  #bgContainer {
+    width: 100%;
+    height: 100%;
+    // position: relative;  //  --------  maybe
+    // z-index: 0;  //  ----------------  maybe
+  }
 
-  :nth-child(1) {
+  #backImgA {
     width: 49.7%;
     height: 100%;
     float: left;
-    position: relative;
-    z-index: 0;
+    // position: relative;
+    // z-index: 0;
     // image background
     background: url('../../imgs/photoFoodPlates_518x421.png') no-repeat;
     background-size: cover;
     background-position: center;
   }
 
-  :nth-child(2) {
+  #backImgB {
     width: 49.7%;
     height: 100%;
     float: right;
-    position: relative;
-    z-index: 0;
+    // position: relative;
+    // z-index: 0;
     // image background
     background: url('../../imgs/photoDrinks_996x740.png') no-repeat;
     background-size: cover;
     background-position: center;
+    clear: right;
   }
 
 }
 // end contFood
+
+
 
 
 #contAbout {
