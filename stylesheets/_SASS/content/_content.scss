@@ -82,7 +82,7 @@ body {
 #contFood {
   height: $contFoodHeight;
   // image background will be applied to two subdivs
-  
+
   #bgContainer {
     width: 100%;
     height: 100%;
@@ -138,5 +138,18 @@ body {
   background: url('../../imgs/map.png') no-repeat;
   background-size: cover;
   background-position: center;
+
+  #iconLogo {
+    width: 224px;
+    height: 260px;
+    position: relative;
+    top: -20%;
+    // background-color: red; //  -----------  temp
+    margin: auto;
+
+    background: url('../../imgs/logoDeerHead2x_500x627.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
 
 }
