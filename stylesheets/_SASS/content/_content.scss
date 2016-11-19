@@ -27,17 +27,44 @@ body {
 }
 
 #splash {
-  background-color: red;  // ---------  temp
   width: 100%;
   height: $splashHeight;
 
+
   // image background
-  background: url('../../imgs/logoBuildingMain2x_2028x1164.png') no-repeat;
+  background: url('../../imgs/logoBuildingMain2x_Fade.png') no-repeat;
   background-size: 70%;
   background-position: 50% 22%;
 
-
 }
+
+#logoMain {
+  width: 460px;
+  height: 424px;
+  margin: auto;
+  position: relative;
+  top: 375px;
+
+  background: url('../../imgs/logoMain2x_1030x754.png') no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+
+#arrow {
+  width: 114px;
+  height: 68px;
+  background-color: green;
+  margin: auto;
+  position: relative;
+  top: 356px;
+
+  background: url('../../imgs/iconArrow2x_134x82.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+
 //
 // #tempDiv {
 //   height: 70px;
