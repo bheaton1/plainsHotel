@@ -2,13 +2,13 @@
 
 
 body {
-  background-color: #fff;  // ---------  temp
-  color: #000;  //            ---------  temp
+  background-color: #fff;
+  color: #000;
 
 }
 
 .buttonMain {
-  width:  auto; // -----------------temp
+  width:  auto;
   height: $buttonHeight;
   background-color: $colorGreen;
   border: 3px solid $colorBrown;
@@ -21,7 +21,7 @@ body {
   text-align: center;
   margin: auto;
   position: relative;
-  // z-index: 1;  //  ----------------  maybe
+  cursor: pointer;
 
 }
 
@@ -92,6 +92,7 @@ body {
 
 .navItem {
   margin: auto;
+  cursor: pointer;
 }
 
 
@@ -101,13 +102,17 @@ body {
   width: $contWidth;
   margin: $contMargin auto;
   //  to center buttons
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 
 #contEvents {
   height: $contEventsHeight;
+
+  //  to center buttons
+  display: flex;
+  align-items: center;
 
   // image background
   background: url('../../imgs/photoTableSetting_900x600.jpg') no-repeat;
@@ -126,8 +131,89 @@ body {
 
 }
 
+#resContainer {
+  width: 350px;
+  height: $contReserveHeight - 48px;
+  // background-color: red;  //  ----- temp
+  float: right;
+  margin: 24px 24px 0 0;
+}
+
+.buttonResA {
+  width: 320px;
+  height: 72px;
+  background-color: $colorBrown;
+  border: 3px solid $colorGreen;
+  margin-bottom: 16px;
+  float: right;
+  line-height: 72px;
+  font-family: Lucida Grande, sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+
+  span {
+    // width: auto;
+    // margin-right: auto;
+  }
+}
+
+.buttonResB {
+  width: 320px;
+  height: 84px;
+  background-color: $colorGreen;
+  border: 3px solid $colorGreen;
+  float: right;
+  line-height: 84px;
+  font-family: Songti TC, serif;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+#iconDate {
+  width: 64px;
+  height: 64px;
+  margin: 4px;
+  float: left;
+  // image background
+  background: url('../../imgs/iconCalendar_64.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#iconBed {
+  width: 64px;
+  height: 64px;
+  margin: 4px;
+  float: left;
+  // image background
+  background: url('../../imgs/iconBed_64.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#iconKey {
+  width: 64px;
+  height: 64px;
+  margin: 4px;
+  float: left;
+  // image background
+  background: url('../../imgs/iconKey_64.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+
+}
+
+
 #contFood {
   height: $contFoodHeight;
+
+  //  to center buttons
+  display: flex;
+  align-items: center;
+
 
   // image background will be applied to two subdivs
 
@@ -172,6 +258,10 @@ body {
 #contAbout {
   height: $contAboutHeight;
 
+  //  to center buttons
+  display: flex;
+  align-items: center;
+
   // image background
   background: url('../../imgs/photoCeiling_2290x846.png') no-repeat;
   background-size: cover;
@@ -181,6 +271,11 @@ body {
 
 #contMap {
   height: $contMapHeight;
+
+  //  to center buttons
+  display: flex;
+  align-items: center;
+
 
   // image background
   background: url('../../imgs/map.png') no-repeat;
@@ -223,6 +318,7 @@ body {
   height: 64px;
   display: inline-block;
   margin: auto;
+  cursor: pointer;
 }
 
 #social_1 {
