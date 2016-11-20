@@ -79,12 +79,6 @@ body {
 
 }
 
-#footer {
-  background-color: $colorGreen;
-  width: 100%;
-  height: $footerHeight;
-
-}
 
 
 //  CONTENT DIVS
@@ -191,3 +185,55 @@ body {
   }
 
 }
+
+
+#footer {
+  background-color: $colorGreen;
+  width: 100%;
+  height: $footerHeight;
+  display: flex;
+  align-items: center;
+}
+
+#socialContainer {
+  width: 500px;
+  height: 66px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.socialIcon {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  margin: auto;
+}
+
+#social_1 {
+  background: url('../../imgs/iconSocial_Facebook_128_b.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#social_2 {
+  background: url('../../imgs/iconSocial_GooglePlus_128_b.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#social_3 {
+  background: url('../../imgs/iconSocial_Instagram_128_b.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#social_4 {
+  background: url('../../imgs/iconSocial_Twitter_128_b.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+// <div id="socialContainer">
+//   <div class="socialIcon" id="social_1"></div>
