@@ -8,11 +8,16 @@ body {
 }
 
 .buttonMain {
-  width:  200px; // -----------------temp
+  width:  auto; // -----------------temp
   height: $buttonHeight;
   background-color: $colorGreen;
   border: 3px solid $colorBrown;
   line-height: $buttonHeight;
+  padding: 0 32px 0 32px;
+  font-family: Songti TC, serif;
+  font-size: 32px;
+  color: #fff;
+  text-transform: uppercase;
   text-align: center;
   margin: auto;
   position: relative;
@@ -21,9 +26,10 @@ body {
 }
 
 #buttonFD {
-  left: 50%;
+  left: 38%;  //  --------  kinda works
+  // top: 50%;   //  --------- NOPE
   position: absolute;
-  // z-index: 2;
+  // z-index: 2;  //  ----- this does fuck-all.
 }
 
 #splash {
@@ -65,20 +71,28 @@ body {
 
 
 
-//
-// #tempDiv {
-//   height: 70px;
-//   width: 100%;
-//   background-color: green;
-// }
 
 #navBar {
   background-color: $colorGreen;
   width: 100%;
   height: $navBarHeight;
-
+  line-height: $navBarHeight;
+  font-family: Songti TC, serif;
+  font-size: 42px;
+  text-transform: uppercase;
 }
 
+#navContainer {
+  width: 90%;
+  height: $navBarHeight;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.navItem {
+  margin: auto;
+}
 
 
 //  CONTENT DIVS
@@ -114,6 +128,7 @@ body {
 
 #contFood {
   height: $contFoodHeight;
+
   // image background will be applied to two subdivs
 
   #bgContainer {
