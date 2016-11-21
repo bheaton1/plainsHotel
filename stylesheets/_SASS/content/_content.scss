@@ -1,0 +1,423 @@
+// SASS content
+
+
+body {
+  background-color: #fff;
+  color: #000;
+
+}
+
+.buttonMain {
+  width:  auto;
+  height: $buttonHeight;
+  background-color: $colorGreen;
+  border: 3px solid $colorBrown;
+  line-height: $buttonHeight;
+  padding: 0 32px 0 32px;
+  font-family: Songti TC, serif;
+  font-size: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+
+}
+
+#buttonFD {
+  left: 38%;  //  --------  kinda works
+  // top: 50%;   //  --------- NOPE
+  position: absolute;
+  // z-index: 2;  //  ----- this does fuck-all.
+}
+
+#splash {
+  width: 100%;
+  height: $splashHeight;
+
+
+  // image background
+  background: url('../../imgs/logoBuildingMain2x_Fade.png') no-repeat;
+  background-size: 70%;
+  background-position: 50% 22%;
+
+}
+
+#logoMain {
+  width: 460px;
+  height: 424px;
+  margin: auto;
+  position: relative;
+  top: 375px;
+
+  background: url('../../imgs/logoMain2x_1030x754.png') no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+
+#arrow {
+  width: 114px;
+  height: 68px;
+  background-color: green;
+  margin: auto;
+  position: relative;
+  top: 356px;
+
+  background: url('../../imgs/iconArrow2x_134x82.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+
+
+#navBar {
+  background-color: $colorGreen;
+  width: 100%;
+  height: $navBarHeight;
+  line-height: $navBarHeight;
+  font-family: Songti TC, serif;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#navContainer {
+  width: 90%;
+  height: $navBarHeight;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.navItem {
+  margin: auto;
+  cursor: pointer;
+}
+
+
+//  CONTENT DIVS
+
+.contBlock {
+  width: $contWidth;
+  margin: $contMargin auto;
+  //  to center buttons
+  // display: flex;
+  // align-items: center;
+}
+
+
+#contEvents {
+  height: $contEventsHeight;
+
+  //  to center buttons
+  display: flex;
+  align-items: center;
+
+  // image background
+  background: url('../../imgs/photoTableSetting_900x600.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#contReserve {
+  height: $contReserveHeight;
+
+  // image background
+  background: url('../../imgs/photoRoom_tinted.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#resContainer {
+  width: 350px;
+  height: $contReserveHeight - 48px;
+  // background-color: red;  //  ----- temp
+  float: right;
+  margin: 24px 24px 0 0;
+}
+
+.buttonResA {
+  width: 320px;
+  height: 72px;
+  background-color: $colorBrown;
+  border: 3px solid $colorGreen;
+  margin-bottom: 16px;
+  float: right;
+  line-height: 72px;
+  font-family: Lucida Grande, sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.buttonResB {
+  width: 320px;
+  height: 84px;
+  background-color: $colorGreen;
+  border: 3px solid $colorGreen;
+  float: right;
+  line-height: 84px;
+  font-family: Songti TC, serif;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+#iconDate {
+  width: 64px;
+  height: 64px;
+  margin: 4px;
+  float: left;
+  // image background
+  background: url('../../imgs/iconCalendar_64.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#iconBed {
+  width: 64px;
+  height: 64px;
+  margin: 4px;
+  float: left;
+  // image background
+  background: url('../../imgs/iconBed_64.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#iconKey {
+  width: 64px;
+  height: 64px;
+  margin: 4px;
+  float: left;
+  // image background
+  background: url('../../imgs/iconKey_64.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+
+}
+
+
+#contFood {
+  height: $contFoodHeight;
+
+  //  to center buttons
+  display: flex;
+  align-items: center;
+
+
+  // image background will be applied to two subdivs
+
+  #bgContainer {
+    width: 100%;
+    height: 100%;
+    // position: relative;  //  --------  maybe
+    // z-index: 0;  //  ----------------  maybe
+  }
+
+  #backImgA {
+    width: 49.7%;
+    height: 100%;
+    float: left;
+    // position: relative;
+    // z-index: 0;
+    // image background
+    background: url('../../imgs/photoFoodPlates_518x421.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #backImgB {
+    width: 49.7%;
+    height: 100%;
+    float: right;
+    // position: relative;
+    // z-index: 0;
+    // image background
+    background: url('../../imgs/photoDrinks_996x740.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    clear: right;
+  }
+
+}
+// end contFood
+
+
+
+
+#contAbout {
+  height: $contAboutHeight;
+
+  //  to center buttons
+  display: flex;
+  align-items: center;
+
+  // image background
+  background: url('../../imgs/photoCeiling_2290x846.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#contMap {
+  height: $contMapHeight;
+
+  //  to center buttons
+  display: flex;
+  align-items: center;
+
+
+  // image background
+  background: url('../../imgs/map.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  #iconLogo {
+    width: 224px;
+    height: 260px;
+    position: relative;
+    top: -20%;
+    margin: auto;
+    // image background
+    background: url('../../imgs/logoDeerHead2x_500x627.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+}
+
+
+#footer {
+  background-color: $colorGreen;
+  width: 100%;
+  height: $footerHeight;
+  display: flex;
+  align-items: center;
+}
+
+#socialContainer {
+  width: 500px;
+  height: 66px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.socialIcon {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  margin: auto;
+  cursor: pointer;
+}
+
+#social_1 {
+  background: url('../../imgs/iconSocial_Facebook_128_b.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#social_2 {
+  background: url('../../imgs/iconSocial_GooglePlus_128_b.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#social_3 {
+  background: url('../../imgs/iconSocial_Instagram_128_b.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#social_4 {
+  background: url('../../imgs/iconSocial_Twitter_128_b.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+// -------------------------------- GRILL PAGE ----------------------------------
+
+#grillBackImgA {
+  width: 50%;
+  // height: 900px - $navBarHeight;
+  height: 100vh;
+  float: left;
+  // position: relative;
+  // z-index: 0;
+  // image background
+  background: url('../../imgs/photoRestaurant_tinted.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#grillBackImgB {
+  width: 50%;
+  // height: 900px - $navBarHeight;
+  height: 100vh;
+  float: right;
+  // position: relative;
+  // z-index: 0;
+  // image background
+  background: url('../../imgs/photoSandwich_cropped.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#containerGrill {
+  width:  450px;
+  height: 450px;
+  margin: auto;
+  position: relative;
+  top: 112px;
+}
+
+#logoGrill {
+  width:  200px;
+  height: 250px;
+  margin: 0 auto 40px auto;
+
+  background: url('../../imgs/logoDeerHead2x_500x627.png') no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+
+#titleGrill {
+  width:  100%;
+  height: auto;
+  line-height: 40px;  //  te smaller line-height tightly wraps the div to the text height
+  margin-bottom: 44px;
+  font-family: Songti TC, serif;
+  font-size: 58px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+}
+
+#buttonGrill {
+  width: 250px;
+  height: 72px;
+  background-color: $colorDarkGreen;
+  border: 3px solid $colorBrown;
+  margin: auto;
+  line-height: 72px;
+  font-family: Songti TC, serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
